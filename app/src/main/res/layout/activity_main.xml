@@ -11,11 +11,7 @@
         android:layout_height="495dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        app:layout_costrainLeft_torightOf="parent"
-        app:layout_costrainLeft_toleftOf="parent"
-        tools:layout_editor_absoluteY="0dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        >
 
     <Button
         android:layout_width="wrap_content"
@@ -36,5 +32,6 @@
         android:onClick=""
         tools:layout_editor_absoluteY="244dp"
         tools:layout_editor_absoluteX="125dp" />
-</LinearLayout>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
+

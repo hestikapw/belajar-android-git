@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
+
 public class SecondActivity extends AppCompatActivity {
     private Button buttonActivity, buttonFragment;
     @Override
@@ -15,6 +17,11 @@ public class SecondActivity extends AppCompatActivity {
         buttonActivity = (Button) findViewById(R.id.buttonActivity);
         buttonFragment = (Button) findViewById(R.id.buttonragment);
 
-        buttonActivity.setOnClickListener(new View.OnClickListener());
+        buttonActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }
