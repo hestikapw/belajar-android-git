@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,31 +7,57 @@
     tools:context="com.amikom.simpleaplication.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="495dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        >
 
-    <Button
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Hello : "
+            />
+        <TextView
+            android:id="@+id/pengguna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hello"
+            android:textColor="@color/colorPrimary"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/l1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go To Fragment"
-        tools:layout_editor_absolutey="115dp"
-        tools:layout_editor_absolutex="44dp"
-        android:onClick=""
-        tools:layout_editor_absoluteY="156dp"
-        tools:layout_editor_absoluteX="121dp" />
+        android:orientation="vertical"
 
-    <Button
-        android:layout_width="134dp"
-        android:layout_height="53dp"
-        android:text="Go To Activity"
-        tools:layout_editor_absolutey="226dp"
-        tools:layout_editor_absolutex="149dp"
-        android:onClick=""
-        tools:layout_editor_absoluteY="244dp"
-        tools:layout_editor_absoluteX="125dp" />
+        >
+        <Button
+            android:id="@+id/tambahuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD USER"
+            android:onClick="adds"/>
+        <Button
+            android:id="@+id/daftaruser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List User"
+            android:onClick="list"/>
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Fragment"
+            android:onClick="kefrag"/>
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" to Activity"
+            android:onClick="activity"/>
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
 
